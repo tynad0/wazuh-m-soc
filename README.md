@@ -4,7 +4,7 @@ A small home-lab SOC: a Wazuh agent on an Ubuntu server sends events to a Wazuh 
 
 Everything here was tested in my own lab with changes I triggered myself.
 
-!(screenshots/overall_n.png)
+![overall](screenshots/overall_n.png)
 
 ## Setup
 
