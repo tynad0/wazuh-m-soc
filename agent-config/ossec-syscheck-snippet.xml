@@ -1,0 +1,7 @@
+     <!-- koroche, this is a fragment of /var/ossec/etc/ossec.conf on the monitored agent. FIM used to scan every
+12 hours and that meant I could see the changes AFTER next scan. So I added a new line with
+attribute realtime="yes". The line is self-explanatory. I was stuck here for a while cuz I didnt know that (  -->
+
+
+<directories>/usr/bin,/usr/sbin</directories>
+<directories realtime="yes">/etc</directories>
