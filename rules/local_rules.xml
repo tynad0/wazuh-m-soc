@@ -1,0 +1,38 @@
+<!-- 
+     Location on the manager: /var/ossec/etc/rules/local_rules.xml
+     All three rules build on built-in FIM rules:
+550 is about integrity checksum changed, 554 was about file added.
+ -->
+
+<group name="local,syscheck,">
+  <rule id="100100" level="12">
+    <if_sid>550, 554</if_sid>
+    <field name="file">/etc/sudoers.d/</field>
+    <description>Sudoers drop-in file added or modified</description>
+    <mitre>
+      <id>T1548.003</id>
+    </mitre>
+  </rule>
+</group>
+
+<group name="local,syscheck,">
+  <rule id="100101" level="12">
+    <if_sid>550</if_sid>
+    <field name="file">/etc/ssh/sshd_config</field>
+    <description>SSH server configuration file modified</description>
+    <mitre>
+      <id>T1562.001</id>
+    </mitre>
+  </rule>
+</group>
+
+<group name="local,syscheck,">
+  <rule id="100102" level="12">
+    <if_sid>550</if_sid>
+    <field name="file">/etc/passwd|/etc/shadow</field>
+    <description>User account database modified</description>
+    <mitre>
+      <id>T1136.001</id>
+    </mitre>
+  </rule>
+</group>
