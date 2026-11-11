@@ -36,7 +36,7 @@ FIM scans `/etc` only every 12 hours; a restart just rebuilds the baseline.
 Enabling `realtime="yes"` for `/etc` fixed it (see [troubleshooting](../docs/troubleshooting.md)).
 
 ## Evidence
-!(../rules/local_rules.xml)
+![custom_rules](../rules/local_rules.xml)
 
 ## What an analyst would do next
 1. Who made the change? Check sudo log events (rule 5402) around the same time.
