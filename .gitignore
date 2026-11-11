@@ -1,0 +1,12 @@
+# secrets and keys
+*.pem
+*.key
+*.vault
+.env
+vault-pass*
+# raw logs and exports (may contain IPs, hostnames, hashes)
+alerts.json
+*.log
+# editor / OS
+.DS_Store
+*.swp
