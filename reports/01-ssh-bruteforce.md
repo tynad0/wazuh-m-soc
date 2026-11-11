@@ -5,6 +5,8 @@ Repeated failed SSH logins. Built-in Wazuh rules, no custom rule needed:
 - **5710** (level 5): login attempt for a non-existent user.
 - **5712** (level 10): multiple failed logins in a short time (brute force).
 
+![5710](../screenshots/5710.png)
+
 MITRE ATT&CK tags shown by Wazuh: T1110.001 (Password Guessing), T1021.004 (SSH).
 
 ## Why it matters
