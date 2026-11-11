@@ -13,9 +13,9 @@ Repeated failures from one source are the typical first sign.
 
 ## Evidence
 
-!(../screenshots/bruteforce_attempts_sc.png)
+![5712](../screenshots/bruteforce_attempts_sc.png)
 
-!(../screenshots/alerts_sc.png)
+![alerts](../screenshots/alerts_sc.png)
 
 ## What an analyst would do next
 1. Find the source IP and check whether it is expected (internal scanner, admin typo) or external.
